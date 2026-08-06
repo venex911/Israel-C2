@@ -1,0 +1,1 @@
+root toor 36000 500000 admin

